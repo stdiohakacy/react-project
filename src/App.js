@@ -6,6 +6,8 @@ import {
   Redirect,
 } from "react-router-dom";
 import { Navbar } from "./app/Navbar";
+import "./App.css";
+import { AddPostForm } from './features/posts/addPostForm'
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
             path="/"
             render={() => (
               <React.Fragment>
-                {/* <AddPostForm /> */}
+                <AddPostForm />
               </React.Fragment>
             )}
           />
