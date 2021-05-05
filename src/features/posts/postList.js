@@ -4,6 +4,7 @@ import { fetchPosts, selectPostIds, selectPostById } from "./postsSlice";
 import { selectUserById } from '../users/usersSlice'
 import { formatDistanceToNow, parseISO } from "date-fns";
 import { Link } from "react-router-dom";
+import { ReactionButtons } from "./reactionButtons";
 
 const PostExcerpt = ({ postId }) => {
   const post = useSelector((state) => selectPostById(state, postId));
@@ -19,7 +20,7 @@ const PostExcerpt = ({ postId }) => {
         &nbsp; <i>{timeAgo} ago</i>
       </span>
       <p>{post.content.substring(0, 100)}</p>
-      {/* <ReactionButtons post={post} /> */}
+      <ReactionButtons post={post} />
       <Link to={`/posts/${post.id}`} className="button">
         View Post
       </Link>
