@@ -15,7 +15,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const handleSubmit = () => {
-
+    
   }
 
   return (
@@ -62,15 +62,6 @@ const Login = () => {
             </Button>
           </Segment>
         </Form>
-        {/* {errors.length > 0 && (
-          <Message error>
-            <h3>Error</h3>
-            {this.displayErrors(errors)}
-          </Message>
-        )} */}
-        <Message>
-          Don't have an account? <Link to="/register">Register</Link>
-        </Message>
       </Grid.Column>
     </Grid>
   );
