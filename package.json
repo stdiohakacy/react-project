@@ -17,7 +17,9 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "seedrandom": "^3.0.5",
-    "txtgen": "^2.2.4"
+    "txtgen": "^2.2.4",
+    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
     "start": "react-scripts start",
